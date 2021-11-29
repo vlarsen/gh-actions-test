@@ -42,7 +42,7 @@ jobs:
           distribution: 'temurin'
       - uses: cactuslab/maven-toolchains-xml-action@v1
         with:
-          output_file: toolchains.xml
+          outputFile: toolchains.xml
           toolchains: |
             [
               {"jdkVersion": "8", "jdkHome": "${{steps.setupJava8.outputs.path}}"},
